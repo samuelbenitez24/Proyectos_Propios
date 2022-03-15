@@ -1,0 +1,82 @@
+﻿
+@{ ViewBag.Title = "Contacto"; }
+@Styles.Render("~/Content/Styles3.css")
+@Scripts.Render("~/Scripts/main.js")
+
+
+<div class="contenedor">
+    <div class="contactos">
+
+        <form action="" method="post">
+
+            <h2>CONTACTO</h2>
+            <input type="text" name="Nombre" placeholder="Nombre" id="nombre" required>
+            <input type="email" name="Correo" placeholder="Correo electróico" id="correo" required>
+            <input type="text" name="Asunto" placeholder="Asunto" id="asunto" required>
+            <textarea name="Mensaje" id="mensaje" placeholder="mensaje" required></textarea>
+            <button type="button" id="boton" onclick="Consulta()">Enviar</button>
+
+
+        </form>
+    </div>
+
+    <div class="ubicacion">
+        <h2>HORARIOS DE ATENCION</h2>
+        <h3>Correo Electronico</h3>
+        <div id="map">
+
+        </div>
+
+    </div>
+
+    @section Scripts{
+
+        <script type="text/javascript">
+
+
+           function Consulta() {
+               if ($('#nombre').val() != '' && $('#correo').val() != '' && $('#asunto').val() != '' && $('#mensaje').val() != '') {
+                   var dato = {
+                       Nombre: $('#nombre').val(),
+                       Correo: $('#correo').val(),
+                       Asunto: $('#asunto').val(),
+                       Mensaje: $('#mensaje').val()
+                   }
+
+                   $.ajax({
+                       url: "@Url.Action("ConsultaCliente", "Contacto")",
+                       data: dato,
+                       type: "post",
+                       success: function (data) {
+                           if (data != '') {
+                               alert(data.mensaje);
+                               console.log(data);
+                           }
+                           window.location.href = '/Contacto/Contacto';
+
+
+
+                       },
+                       error: function (resquest, status, error) {
+                           alert("Error al enviar la informacion");
+                       }
+
+
+                   });
+
+               } else 
+               {
+                   alert("Completa todos los campos");
+               }
+           
+           }
+         
+
+        </script>
+    }
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+</div>
+
+
+

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbarino</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="CSS/nivo-slider.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="nav-principal">
+            <img src="img2/descarga.jpg" alt="Garbarino LOGO" class="nav-marca">
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html"><span class="icon-home"></span> Inicio</a>
+                </li>
+                <li>
+                    <a href="tienda.html"><span class="icon-industry"></span> Tiendas</a>
+                </li>
+                <li>
+                    <a href="Contactos.html"><span class="icon-bubbles2"></span> Contactanos</a>
+                </li>
+
+            </ul>
+            <ul class="nav-menu-izq">
+                <li>
+                <li>
+                    <a href="#"><span class="icon-user"></span> Ingresar</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-add_shopping_cart"></span>Carrito de compras</a>
+                </li>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div class="contenedor">
+        <div class="slider-wrapper theme-mi-slider">
+            <div id="slider" class="nivoSlider">
+                <img src="img3/1primimg.png" alt="" title="#htmlcaption1" />
+                <img src="img3/2primimg.png" alt="" title="#htmlcaption2" />
+                <img src="img3/3primimg.png" alt="" title="#htmlcaption3" />
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+            </div>
+            <div id="htmlcaption3" class="nivo-html-caption">
+            </div>
+        </div>
+
+        <div class="categoria">
+            <div class="menu">
+                <li class="item" id='categoria'>
+                    <a href="#categoria" class="btn2"><i class="far fa-user"></i>CATEGORIA</a>
+                </li>
+
+                <li class="item" id='tecnologia'>
+                    <a href="#tecnologia" class="btn2"><i class="icon-laptop"></i>TECNOLOGIA</a>
+                    <div class="sub-menu">
+                        <a href="#">Celulares y Tablets</a>
+                        <a href="#">Informática</a>
+                        <a href="#">Videojuegos</a>
+                    </div>
+                </li>
+
+                <li class="item" id="electrodomesticos">
+                    <a href="#electrodomesticos" class="btn2"><i class="icon-hdd-o"></i>ELECTRODOMESTICOS</a>
+                    <div class="sub-menu">
+                        <a href="#">Televisores y Video</a>
+                        <a href="#">Pequeños Electrodomésticos</a>
+                        <a href="#">Climatización</a>
+                    </div>
+                </li>
+
+                <li class="item" id="casaJardin">
+                    <a href="#casaJardin" class="btn2"><i class="icon-home3"></i>CASA Y JARDIN</a>
+                    <div class="sub-menu">
+                        <a href="#">Muebles</a>
+                        <a href="#">Living Comedor y Deco</a>
+                    </div>
+                </li>
+            </div>
+
+
+
+
+        </div>
+
+        <div>
+            <h3>Productos Destacados</h3>
+            <div class="nuevas_cartas">
+
+
+                <div>
+                    <img src="img2/6f948059428debdc23495a5060a3.jpg" alt="televisores">
+                    <h5>Smart TV LED Philips 58 " 4K Ultra HD 58PUD6654/77</h5>
+                    <a class="modificar" data-modal-target="#modal">ver</a>
+                    <P class="price" data-precio="">4.999,00</P>
+                    <a href="#" class="btn radius" >COMPRAR <span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-header">
+                            <div class="title">Smart TV LED Philips 58 " 4K Ultra HD 58PUD6654/77</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/6f948059428debdc23495a5060a3.jpg" alt="televisores">
+                            <P class="texto">Tipo de PantallaLED <br>
+                                Pulgadas58"<br>
+                                Resolución de Video4K Ultra HD<br>
+                                Relación de Aspecto16:9<br>
+                                Norma de VideoISDB-T<br>
+                                Tipo de TVSmart TV<br>
+                                Formato de PantallaPlana<br>
+                                Resolución3840x2160<br>
+                                HDRNoVe</P>
+                            <P class="precio">$74.999,00</P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+
+                    <div id="overlay"></div>
+
+                </div>
+                <div>
+                    <img src="img2/samsungnote10.png" alt="Celulares">
+                    <h5>Celular Libre Samsung Galaxy Note 10+ Plateado SM-N975FZSLARO</h5>
+                    <a class="modificar" data-modal-target="#modal2">ver</a>
+                    <P class="price">$114.999,00 </P>
+                    <a href="#" class="btn radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal2">
+                        <div class="modal-header">
+                            <div class="title">Celular Libre Samsung Galaxy Note 10+ Plateado SM-N975FZSLARO</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/samsungnote10.png" alt="Celulares">
+                            <P class="texto">
+                                Principales especificaciones<br>
+                                Pantalla 6.3 <br>
+                                Memoria interna 256GB <br>
+                                Procesador Octa Core 2,7GHz,2.3GHz,1.9GHz <br>
+                                Sistema operativo Android 9 Pie <br>
+                                Cámara 12 MP + 12 MP + 16 MP <br>
+                                Compatible 4G <br>
+                            </P>
+                            <P class="precio">$114.999,00 </P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+
+                    <div id="overlay"></div>
+
+                </div>
+                <div>
+                    <img src="img2/b9a8ae9aa5cef096f7af6715edf8.jpg" alt="muebles">
+                    <h5>Escritorio Melamina Centro Estant SC109Wr</h5>
+                    <a class="modificar" data-modal-target="#modal3">ver</a>
+                    <P class="price">$3.578,00</P>
+                    <a href="#" class="btn radius">COMPRAR<span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal3">
+                        <div class="modal-header">
+                            <div class="title">Escritorio Melamina Centro Estant SC109W</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/b9a8ae9aa5cef096f7af6715edf8.jpg" alt="muebles">
+                            <P class="texto">Marca Centro Estant<br>
+                                Tipo de Producto Escritorio<br>
+                                Material de Correderas Metal<br>
+                                Ubicación en el Hogar Oficina<br>
+                                Cantidad de Estantes 1<br>
+                                Es Gamer Sí<br>
+                                Modelo SC109W<br>
+                                Material Melamina<br>
+                                Color Wengue<br>
+                                Cantidad de Cajones 1<br>
+                                Requiere Armado Sí<br>
+                            </P>
+                            <P class="precio">$3.578,00</P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+
+                    <div id="overlay"></div>
+
+                </div>
+
+
+
+            </div>
+            <h3>OFERTAS</h3>
+            <div class="nuevas_cartas">
+                <div>
+                    <img src="img2/lenovocompu.png" alt="ordenadores">
+
+                    <h5>Notebook 2 en 1 Lenovo Flex 5 14 " AMD Ryzen 16 GB</h5>
+                    <a class="modificar" data-modal-target="#modal4">ver</a>
+                    <P class="price">$189.600,00</P>
+                    <a href="#" class="btn radius">COMPRAR<span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal4">
+                        <div class="modal-header">
+                            <div class="title">Notebook 2 en 1 Lenovo Flex 5 14 " AMD Ryzen 16 GB</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/lenovocompu.png" alt="televisores">
+                            <P class="texto">
+                                Marca Lenovo <br>
+                                Tipo. Notebook 2 en 1<br>
+                                Modelo Flex 5<br>
+                                Apto para uso en Estudio, Hogar, Trabajo, Oficina Marca de ProcesadorAMD <br>
+                                Modelo de Procesador Amd Ryzen 5 3550H <br>
+                                Versión del Procesador Ryzen <br>
+                                Velocidad del Procesador 2.1 GHz <br>
+                                Tamaño de Pantalla 14" <br>
+                                Resolución 1920 x 1080 <br>
+                                Tipo de Pantalla FHD <br>
+                                Pantalla Táctil Sí <br>
+                            </P>
+                            <P class="precio">$189.600,00</P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+
+                    <div id="overlay"></div>
+                </div>
+                <div>
+                    <img src="img2/e4a1148ccb3556c11d09b954a58d.jpg" alt="Celulares">
+
+                    <h5>Celular Libre Samsung Galaxy S20 SM-G980F Gris 128 GB</h5>
+                    <a class="modificar" data-modal-target="#modal5">ver</a>
+                    <P class="price">$97.999,00</P>
+                    <a href="#" class="btn radius">COMPRAR<span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal5">
+                        <div class="modal-header">
+                            <div class="title">Celular Libre Samsung Galaxy S20 SM-G980F Gris 128 GB</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/e4a1148ccb3556c11d09b954a58d.jpg" alt="televisores">
+                            <P class="texto">Marca Samsung <br>
+                                Prestadora Libre<br>
+                                Color Gris<br>
+                                Modelo Galaxy S20 SM-G980F<br>
+                                Velocidad de Internet 4G<br>
+                                Resistente al agua No<br>
+                            </P>
+                            <P class="precio">$97.999,00</P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+
+
+                </div>
+                <div>
+                    <img src="img2/e6dae8684b6e3d9b36aea07c891c.jpg" alt="televisores">
+                    <h5>Smart TV LED Philips 70 " 4K Ultra HD 70PUG6774/77</h5>
+                    <a class="modificar" data-modal-target="#modal6">ver</a>
+                    <P class="price">$149.999,00</P>
+                    <a href="#" class="btn radius">COMPRAR<span class="icon-add_shopping_cart"></span></a>
+
+                    <div class="modal" id="modal6">
+                        <div class="modal-header">
+                            <div class="title">Smart TV LED Philips 70 " 4K Ultra HD 70PUG6774/77</div>
+                            <button data-close-button class="close-button">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="img2/e6dae8684b6e3d9b36aea07c891c.jpg" alt="televisores">
+                            <P class="texto">
+                                Tipo de Pantalla LED <br>
+                                Pulgadas 70" <br>
+                                Resolución de Video 4K Ultra HD <br>
+                                Relación de Aspecto 16:9 <br>
+                                Norma de Video ISDB-T <br>
+                                Tipo de TV Smart TV <br>
+                                Formato de Pantalla Plana <br>
+                                Resolución 3840x2160 <br>
+                                HDR No <br>
+                                Modos de Sonido Dolby <br>
+                                Función de Sonido Diálogo, Dolby, Nivelador Automatico de Volumen, Nocturno <br>
+                            </P>
+                            <P class="precio">$149.999,00</P>
+                            <a href="#" class="btn3 radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <section class="social">
+        <p>Siganos en la redes sociales</p>
+        <div class="links">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+                <i class="icon-instagram"></i>
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+    <div class="footer-links">
+        <div class="footer-contenido">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Categorias</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Televisores</a>
+                </li>
+                <li>
+                    <a href="#">Celulares libres</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Marcas</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Samsung</a>
+                </li>
+                <li>
+                    <a href="#">Philips</a>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Servicios</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Atencion al Cliente</a>
+                </li>
+                <li>
+                    <a href="#">Venta Telefonica</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Ayuda</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Nuestras Sucursales</a>
+                </li>
+                <li>
+                    <a href="#">Centro de Ayuda</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Servicios para Empresas</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Ventas de empresas</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <footer class="footer ">
+
+        <h3>Garbarino copyright©</h3>
+    </footer>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+    <script src="JS/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="JS/main.js" type="text/javascript"></script>
+    
+
+
+
+</body>
+
+</html>

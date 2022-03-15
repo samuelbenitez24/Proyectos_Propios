@@ -1,0 +1,118 @@
+﻿
+
+@model  PaginaWeb2.Models.InicioModel
+
+@{
+    ViewBag.Title = "Inicio";
+}
+
+@Styles.Render("~/Content/Styles.css")
+@Styles.Render("~/Content/nivo-slider.css")
+
+<div class="contenedor">
+    <div class="slider-wrapper theme-mi-slider">
+        <div id="slider" class="nivoSlider">
+            <img src="~/Img/1primimg.png" alt="" title="#htmlcaption1" />
+            <img src="~/Img/2primimg.png" alt="" title="#htmlcaption2" />
+            <img src="~/Img/3primimg.png" alt="" title="#htmlcaption3" />
+        </div>
+        <div id="htmlcaption1" class="nivo-html-caption">
+
+        </div>
+        <div id="htmlcaption2" class="nivo-html-caption">
+        </div>
+        <div id="htmlcaption3" class="nivo-html-caption">
+        </div>
+    </div>
+
+    <div class="categoria">
+        <div class="menu">
+
+
+            <ul>
+                @foreach (var Categoria in Model.Categoria)
+                {
+                    
+                   <li class="item" id='@Categoria.ID'>
+                    <a href="#@Categoria.ID" class="btn2"><i class="far fa-user"></i>@Categoria.categoria</a>
+                    @if (Categoria.ID >= 2)
+                    {      
+                                <div class="sub-menu">
+                                     @foreach (var SubCategoria in Model.SubCategoria)
+                                     {
+                                         if (Categoria.ID == SubCategoria.Categoria) 
+                                         {
+                                             <a href="#">@SubCategoria.Subcategoria</a>
+                                         }
+                                        
+                                     }
+                                  
+                                </div>                    
+                    }
+                   </li>
+                }
+            </ul>
+
+
+        </div>
+    </div>
+
+    <div class="separador">
+        <h3>Productos Destacados</h3>
+        <div class="nuevas_cartas">
+
+            @foreach (var Producto in Model.Producto)
+            {
+                if (Producto.EsDestacado==true)
+                {
+                    <div id="@Producto.ID" class="producto" data-nombre="@Producto.Nombre"
+                         data-img="@Url.Content("~/" + Producto.Imagen)" data-precio="@Producto.Precio" data-button="COMPRAR">
+                        <img src="@Producto.Imagen" alt="televisores">
+                        <h5>@Producto.Nombre</h5>
+                        <a class="modificar" data-modal-target="#modal">ver</a>
+                        <P class="precio">$@Producto.Precio</P>
+                        <a href="#" class="btn radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+
+                    </div>
+                }
+            }
+
+        </div>
+        <h3>OFERTAS</h3>
+        <div class="nuevas_cartas">
+
+            @foreach (var Producto in Model.Producto)
+            {
+              
+                if (Producto.EsOferta==true)
+                {
+
+                    <div id="@Producto.ID" class="producto" data-nombre="@Producto.Nombre"
+                         data-img="@Url.Content("~/" + Producto.Imagen)" data-precio="@Producto.Precio" data-button="COMPRAR">
+                        <img src="@Producto.Imagen" alt="televisores">
+                        <h5>@Producto.Nombre</h5>
+                        <a class="modificar" data-modal-target="#modal">ver</a>
+                        <P class="precio">$@Producto.Precio</P>
+                        <a href="#" class="btn radius">COMPRAR <span class="icon-add_shopping_cart"></span></a>
+
+                    </div>
+                }
+
+            }
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title" id="nombre-data"></div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="img-data" alt="">
+                <P class="precio" id="precio-data"></P>
+                <a href="#" class="btn3 radius" id="button-data">
+                    <span class="icon-add_shopping_cart"></span>
+                </a>
+            </div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+</div>

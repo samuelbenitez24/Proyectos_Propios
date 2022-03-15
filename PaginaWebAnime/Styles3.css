@@ -1,0 +1,364 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    color: white;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url(img/animefav.jpg) ;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style:none ;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+
+
+}
+/*estilos de navegacion*/
+.nav-principal{
+   
+    
+    font-size: 17px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    height: 60px;
+    width: 90%;
+    padding: 0px 0;
+    background: black;
+    position: fixed;
+    top: 0;
+    opacity: .9;
+    
+
+}
+
+.nav-marca{
+    width: 58px;
+    
+
+}
+.nav-principal ul{
+    
+    display: flex;
+}
+.nav-principal ul li{
+    padding:10px ;
+}
+.nav-principal ul li a{
+    padding:1.5px ;
+}
+.nav-principal ul li a:hover{
+    border-bottom: 2px solid #ffffff;
+}
+.nav-principal ul.nav-menu{
+    flex: 1;
+    margin-left:20px ;
+
+}
+.menu-btn{
+    position: fixed;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    z-index: 2;
+    font-size: 1.5rem;
+    display: none;
+
+}
+/*BANNER*/
+hr{
+    margin-top: 70px;
+    
+}
+
+.banner{
+    width: 100%;
+    height: 450px;
+    background: url(img/logoNaruto.jpg) no-repeat center center/cover;
+    padding:50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.btn{
+    cursor: pointer;
+    display:inline-block ;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: #262626;
+    color: #ffffff;
+    font-size:15px ;
+    border: 1px solid #ffffff;
+    margin: 10px 0;
+
+}
+
+.bnt:hover{
+    opacity:.5 ;
+}
+.banner h2,p{
+    margin-bottom:10px ;
+}
+
+
+/*nuevas cartas*/
+.nuevas_cartas{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 25px;
+    margin: 10px 0;
+    padding: 20px;
+    background: black;
+    opacity: 1.1;
+}
+
+
+.nuevas_cartas img{
+    width: 50%;
+    height: 30%;
+    padding-left: 4px;
+
+
+}
+.nuevas_cartas h3{
+    font-size: 20px;
+    margin: 10px 0;
+    color:white;
+    background: black;
+
+}
+.nuevas_cartas p{
+    /*font-weight: bold;*/
+    color: white;
+    padding: 5px;
+    
+}
+.nuevas_cartas a{
+    padding: 10px 7px;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.nuevas_cartas a:hover{
+    text-decoration:underline;
+
+}
+
+/*carta banner 1*/
+
+.cartas-banner-uno{
+    width: 100%;
+    height: 350px;
+    background: url(img/Naruto-Shippuden-Sasuke-Ichiha.jpg)no-repeat center center/cover;
+    margin-bottom: 20px;
+}
+.cartas-banner-uno .contenido{
+    
+    width: 70%;
+    padding: 90px 0 0 30px;
+    color: white;
+
+}
+.cartas-banner-uno  p
+.cartas-banner-uno h2{
+    margin: 10px 0 20px 0; 
+    
+
+}
+.cartas-banner-dos{
+    width: 100%;
+    height: 350px;
+    background: url(img/4580164722_1a60f627d2_z.jpg)no-repeat center ;
+    background-size: cover;
+    margin-bottom: 40px;
+
+
+}
+.cartas-banner-dos .contenido{
+    
+    width: 70%;
+    padding: 120px 0 0 90px;
+    color:white;
+    font-weight: bold;
+
+}
+.cartas-banner-dos p
+.cartas-banner-dos h2{
+    margin: 10px 0 20px 0;
+}
+/*social*/
+.social{
+    margin: 50px;
+
+}
+.social p{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+
+}
+.links a{
+    margin: 0 30px;
+    color: black;
+}
+
+.links a i{
+    font-size: 3rem;
+}
+
+/*footerlinks*/
+.footer-links{
+    background: #2f3640;
+    color:#616161 ;
+    font-size: 12px;
+    padding: 35px 0;
+
+}
+
+.footer-contenido{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-contenido ul{
+    margin: 0 auto ;
+}
+.footer-contenido ul li{
+    line-height: 2.5;
+
+}
+.footer{
+    background: #2f3640;
+    color:#616161 ;
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 700px){
+    .banner{
+        width: 100%;
+    }
+    .menu-btn{
+        display: block;
+        padding-right: 10px;
+    }
+    .nav-principal ul.nav-menu{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2f3640;
+        height: 1200%;
+        padding: 30px;
+        opacity:.9;
+        transform: translateX(-400px);
+        transition: transform .5s ease-in-out;
+
+    }
+    .nav-principal ul.nav-menu.show{
+        transform: translateX(-20px);
+
+    }
+    .nav-principal ul.nav-menu li{
+        padding: 20px;
+        font-size: 14px;
+
+    }
+    .nav-principal ul.nav-menu-izq{
+        margin-right:40px ;
+
+    }
+    .nuevas_cartas img{
+        width: 100%;
+        height: 270px;
+    }
+    .nuevas_cartas{
+        grid-template-columns: 1fr;
+        font-size: 14px;
+        
+
+    }
+    .cartas-banner-uno .contenido,
+    .cartas-banner-dos .contenido{
+        width: 80%;
+    } 
+    .footer-links .footer-contenido{
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
+}
+/*@media screen and (max-width:700px) {
+    .nueva_carta p{
+        font-size: 1px;
+    }
+ }*/
+@media(max-width: 500px){
+    .banner{
+        width: 100%;
+        height: 250px;
+        
+    }
+    .nuevas_cartas{
+        grid-template-columns: 1fr;
+        font-size: 12px;
+
+    
+    }
+    .nuevas_cartas img{
+        width: 100%;
+        height: 270px;
+    }
+    .cartas-banner-uno.contenido
+    .cartas-banner-dos.contenido{
+        width: 100%;
+        padding: 60px 20px;
+    }
+    .footer-links.footer-contenido{
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr;
+
+    }
+}

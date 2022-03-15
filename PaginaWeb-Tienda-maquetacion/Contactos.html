@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="CSS/Styles3.css" type="text/css">
+    <title>Contactanos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-principal">
+            <img src="img2/descarga.jpg" alt="Garbarino LOGO" class="nav-marca">
+            <ul class="nav-menu show">
+                <li>
+                    <a href="index.html"><span class="icon-home"></span> Inicio</a>
+                </li>
+                <li>
+                    <a href="tienda.html"><span class="icon-industry"></span> Tiendas</a>
+                </li>
+                <li>
+                    <a href="Contactos.html"><span class="icon-bubbles2"></span> Contactanos</a>
+                </li>
+
+            </ul>
+            <ul class="nav-menu-izq">
+                <li>
+                <li>
+                    <a href="#"><span class="icon-user"></span> Ingresar</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-add_shopping_cart"></span>Carrito de compras</a>
+                </li>
+                </li>
+            </ul>
+
+        </nav>
+        <hr>
+    </header>
+    <div class="contenedor">
+        <div class="contactos">
+
+            <form action="" >
+
+                <h2>CONTACTO</h2>
+                <input type="text" name="nombre" placeholder="Nombre" id="nombre" required>
+                <input type="email" name="correo" placeholder="Correo electróico" id="correo" required>
+                <input type="text" name="asunto" placeholder="Asunto" id="asunto" required>
+                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+                <button type="button" id="boton" onclick="validarFormulario()">Enviar</button>
+
+
+            </form>
+
+           
+
+        </div>
+
+        <div class="ubicacion">
+            <h2>HORARIOS DE ATENCION</h2>
+            <h3>Correo Electronico</h3>
+            <div id="map">
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <section class="social">
+        <p>Siganos en la redes sociales</p>
+        <div class="links">
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#">
+                <i class="icon-instagram"></i>
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+    <div class="footer-links">
+        <div class="footer-contenido">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Categorias</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Televisores</a>
+                </li>
+                <li>
+                    <a href="#">Celulares libres</a>
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Marcas</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Samsung</a>
+                </li>
+                <li>
+                    <a href="#">Philips</a>
+                </li>
+
+            </ul>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Servicios</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Atencion al Cliente</a>
+                </li>
+                <li>
+                    <a href="#">Venta Telefonica</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Ayuda</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Nuestras Sucursales</a>
+                </li>
+                <li>
+                    <a href="#">Centro de Ayuda</a>
+                </li>
+
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Servicios para Empresas</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Ventas de empresas</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <footer class="footer ">
+
+        <h3>Garbarino copyright©</h3>
+    </footer>
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+
+
+
+
+</body>
+
+</html>
